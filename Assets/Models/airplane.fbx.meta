@@ -134,6 +134,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100006, guid: 6702f92b6ff853440ae094ea518d139f, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: body
     second: {fileID: 2100000, guid: 840cd014609534b4f8250ab9d32a7102, type: 2}
   - first:
