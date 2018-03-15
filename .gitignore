@@ -4,6 +4,8 @@
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
+Assets/Imported Assets/StarSparrow
+Assets/Imported Assets/Tree stump
 
 # Visual Studio 2015 cache directory
 /.vs/
@@ -33,3 +35,4 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/Imported Assets/StarSparrow.meta

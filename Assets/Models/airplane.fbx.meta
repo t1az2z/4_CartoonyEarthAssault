@@ -150,7 +150,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: wings dark
-    second: {fileID: 2100000, guid: e4de3dec43a5d9d4eb82419240967829, type: 2}
+    second: {fileID: 2100000, guid: c39bf4e8540ae3a438a28f5bf76113f4, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
