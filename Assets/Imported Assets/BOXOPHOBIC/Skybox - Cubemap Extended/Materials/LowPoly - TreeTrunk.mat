@@ -7,12 +7,12 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: LowPoly - TreeTrunk
-  m_Shader: {fileID: 14000, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _COLOR_ON
+  m_Shader: {fileID: 10509, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: GEOM_TYPE_BRANCH _COLOR_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -99,8 +99,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AO: 2.4
-    - _BaseLight: 0.35
+    - _AO: 0
+    - _BaseLight: 0.217
     - _Bottom: 0
     - _BottomColorPos: 0
     - _Brightness: 1
@@ -144,7 +144,7 @@ Material:
     - __dirty: 0
     m_Colors:
     - _BottomColor: {r: 0.43382335, g: 0.2423427, b: 0, a: 1}
-    - _Color: {r: 0.58965516, g: 0.41533017, b: 0.35119164, a: 1}
+    - _Color: {r: 0.8931034, g: 0.6290673, b: 0.53192174, a: 1}
     - _Color1: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariation: {r: 0.32758623, g: 0.16379312, b: 0, a: 0.1}
