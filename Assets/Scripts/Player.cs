@@ -67,4 +67,18 @@ public class Player : MonoBehaviour {
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            print("enemy hit");
+        }
+        else
+        {
+            print("triggered");
+        }
+    }
+
+
 }

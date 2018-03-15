@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using UnityEngine.SceneManagement;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour {
 
@@ -8,15 +6,8 @@ public class MusicPlayer : MonoBehaviour {
     {
         DontDestroyOnLoad(gameObject);
     }
-    void Start () {
-        Invoke("LoadFirstScene", 5f);
 
-	}
-    void LoadFirstScene()
-    {
-        SceneManager.LoadScene(1);
 
-    }
 
     void Update () {
 		

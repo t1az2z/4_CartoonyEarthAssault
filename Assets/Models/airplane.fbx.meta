@@ -99,6 +99,12 @@ ModelImporter:
     4300026: Cylinder.003
     4300028: Cylinder.002
     4300030: Cylinder.001
+    6400000: AirPlane
+    6400002: Cylinder
+    6400004: Cylinder.001
+    6400006: Cylinder.006
+    6400008: Cylinder.009
+    6400010: Cylinder.014
     7400000: CylinderAction
     7400002: Cylinder|CylinderAction
     7400004: Attack
