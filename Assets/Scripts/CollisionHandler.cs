@@ -7,6 +7,8 @@ public class CollisionHandler : MonoBehaviour {
 
     [SerializeField][Tooltip("Delay befor level load")] float levelLoadDelay = 1f;
     [SerializeField][Tooltip("Reference to death effect game object")] GameObject deathFX;
+
+
     private void OnTriggerEnter(Collider other)
     {
         StartDeathSequence();
