@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour {
     //todo change circuit to depend from Time.deltaTime
 
     [Header("General")]
+    [SerializeField] GameObject[] guns;
+
     [Tooltip("In ms^-1 (meters per second)")][SerializeField] float controllSpeed = 60f;
     [Tooltip("in meters")][SerializeField] float xRange = 28f;
     [Tooltip("in meters")] [SerializeField] float yRange = 22f;
@@ -30,6 +32,7 @@ public class PlayerController : MonoBehaviour {
         {
             ProcessTransition();
             ProcessRotation();
+            ProcessFiring();
         }
 
 
@@ -69,6 +72,34 @@ public class PlayerController : MonoBehaviour {
 
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
+    }
+
+    void ProcessFiring()
+    {
+        if (CrossPlatformInputManager.GetButton("Fire"))
+        {
+            ActivateGuns();
+        }
+        else
+        {
+            DeactivateGuns();
+        }
+    }
+
+    private void DeactivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(false);
+        }
+    }
+
+    private void ActivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(true);
+        }
     }
 
     private void DisableControlls() //called by string reference
