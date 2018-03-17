@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour {
     [SerializeField][Tooltip("Death FX prefab")] GameObject deathFX;
     [SerializeField] [Tooltip("Parrent object for spawned fx prefabs")] Transform fxParrent;
 
-    [SerializeField] int scorePerHit = 12;
+    [SerializeField] int scorePerEnemy = 12;
     [SerializeField] int hits = 3;
 
     ScoreBoard scoreBoard;
@@ -36,13 +36,14 @@ public class Enemy : MonoBehaviour {
 
     private void TakeAHit()
     {
-        scoreBoard.ScoreHit(scorePerHit);
+
         hits--;
         //todo possibly hit effect
     }
 
     private void EnemyDeath()
     {
+        scoreBoard.ScoreHit(scorePerEnemy);
         GameObject fx = Instantiate(deathFX, transform.localPosition, Quaternion.identity); //todo change localPosition to global after enemy remake
         fx.transform.parent = fxParrent;
         Destroy(gameObject);
