@@ -44,7 +44,7 @@ public class Enemy : MonoBehaviour {
     private void EnemyDeath()
     {
         scoreBoard.ScoreHit(scorePerEnemy);
-        GameObject fx = Instantiate(deathFX, transform.localPosition, Quaternion.identity); //todo change localPosition to global after enemy remake
+        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity); 
         fx.transform.parent = fxParrent;
         Destroy(gameObject);
     }
